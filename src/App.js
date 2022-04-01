@@ -260,15 +260,6 @@ class FullComment extends React.Component {
                 <summary data-closed={`— View Replies (${Object.keys(comment.replies).length})`} data-opened="— Hide Replies"></summary>
                 <LandscapeComments comments={comment.replies} replies={true}/>
               </details>
-              {/* {
-                document.getElementById(comment.postId).querySelector("#Full-comment-details").addEventListener("toggle", event => {
-                  if (document.getElementById(comment.postId).querySelector("#Full-comment-details").open) {
-                    document.getElementById(comment.postId).querySelector("#Full-comment-details").querySelector("summary").value = `— View Replies (${Object.keys(comment.replies).length})`;
-                  } else {
-                    document.getElementById(comment.postId).querySelector("#Full-comment-details").querySelector("summary").value = `— Hide Replies`;
-                  }
-                })
-              } */}
             </div>
           </div>
           
